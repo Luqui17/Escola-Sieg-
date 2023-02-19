@@ -16,7 +16,7 @@ namespace EscolaSieg
         public Cadastro(string nome, string email, string senha)
         {
             //comando sql 
-            cmd.CommandText = "insert into usuario(nome, email, senha) values(@nome, @email, @senha)";
+            cmd.CommandText = "insert into usuario (nome, email, senha) values (@nome, @email, @senha)";
 
             //parametros
             cmd.Parameters.AddWithValue("@nome", nome);

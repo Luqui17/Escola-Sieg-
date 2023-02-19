@@ -7,14 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace EscolaSieg
 {
-    public partial class TelaCadastro : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
         }
-        private void BotaoCadastrar(object sender, EventArgs e)
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            Cadastro cad = new Cadastro(nome.Value,email.Value,senha.Value);
+
         }
     }
-} 
+}

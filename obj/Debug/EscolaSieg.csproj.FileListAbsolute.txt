@@ -51,12 +51,6 @@ C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\roslyn\vbc.rsp
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\roslyn\VBCSCompiler.exe
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.AssemblyReference.cache
-C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.CoreCompileInputs.cache
-C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.CopyComplete
-C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.dll
-C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.pdb
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\Newtonsoft.Json.dll
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\System.Net.Http.Formatting.dll
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\System.Web.Http.dll
@@ -65,6 +59,11 @@ C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\Newtonsoft.Json.xml
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\System.Net.Http.Formatting.xml
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\System.Web.Http.xml
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\System.Web.Http.WebHost.xml
+C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\pt-br\System.Net.Http.Formatting.resources.dll
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\pt-br\System.Web.Http.resources.dll
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.CoreCompileInputs.cache
+C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.CopyComplete
+C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.dll
+C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.pdb

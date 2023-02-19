@@ -1,4 +1,4 @@
-﻿<%@ Page EnableEventValidation="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TelaCadastro.aspx.cs" Inherits="EscolaSieg.TelaCadastro" EnableEventValidation="false"%>
 <!DOCTYPE html>
 <script runat="server">
 </script>
@@ -46,7 +46,7 @@
                             </div>
                             <div class="form-group" runat="server">
                                 <br/>
-                                <label for="email">Email :</label>&nbsp;
+                                <label for="email">Email :</label>
                             </div>
                             <div class="form-group" runat="server">
                                 <input class="form-control" type="email" name="txbEmail" id="email"
