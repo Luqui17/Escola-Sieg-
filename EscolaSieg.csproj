@@ -82,12 +82,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controle.cs" />
-    <Compile Include="TelaDeLogin.aspx.cs">
-      <DependentUpon>TelaDeLogin.aspx</DependentUpon>
+    <Compile Include="TelaInicial.aspx.cs">
+      <DependentUpon>TelaInicial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TelaDeLogin.aspx.designer.cs">
-      <DependentUpon>TelaDeLogin.aspx</DependentUpon>
+    <Compile Include="TelaInicial.aspx.designer.cs">
+      <DependentUpon>TelaInicial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Content Include="TelaCadastro.aspx" />
     <Compile Include="TelaCadastro.aspx.cs">
@@ -99,8 +106,9 @@
     </Compile>
     <Compile Include="Cadastro.cs" />
     <Compile Include="Conexao.cs" />
-    <Content Include="TelaDeLogin.aspx" />
+    <Content Include="TelaInicial.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

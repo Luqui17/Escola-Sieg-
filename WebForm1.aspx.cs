@@ -8,21 +8,21 @@ using System.Windows.Forms;
 
 namespace EscolaSieg
 {
-    public partial class TelaDeLogin : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            botaoLogin.ServerClick += new EventHandler(this.LoginButton);
+            Page.Response.Write("<script>console.log('Lcuas');</script>");
+            botaoCadastrar.ServerClick += new EventHandler(this.CadastrarButton);
         }
-        private void LoginButton(object sender, EventArgs e)
+        private void CadastrarButton(object sender, EventArgs e)
         {
-            Page.Response.Write("<script>alert('teste');</script>");
-            Page.Response.Write("<script>console.log('teste');</script>");
             Controle controle = new Controle();
             controle.Acessar(email.Value, senha.Value);
             if (controle.tem)
             {
                 MessageBox.Show("Logado com Sucesso");
+                Page.Response.Redirect("TelaInicial.aspx");
             }
             else
             {

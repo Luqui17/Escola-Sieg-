@@ -41,7 +41,7 @@ namespace EscolaSieg
         public bool VerificarLogin(string email, string senha)
         {
             //Comandos Sql verificar se tem no banco de dados
-            cmd.CommandText = "select * from usuario where email = @email and senha = @senha";
+            cmd.CommandText = "select * from usuario where email = @email and senha = @senha;";
             cmd.Parameters.AddWithValue("@email", email);
             cmd.Parameters.AddWithValue("@senha", senha);
             try

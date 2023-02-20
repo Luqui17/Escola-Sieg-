@@ -67,3 +67,4 @@ C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.C
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.CopyComplete
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.dll
 C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.pdb
+C:\Users\luqui\source\repos\Escola Sieg\EscolaSieg\obj\Debug\EscolaSieg.csproj.AssemblyReference.cache

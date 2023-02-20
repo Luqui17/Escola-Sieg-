@@ -22,5 +22,6 @@ namespace EscolaSieg
             Page.Response.Write("<script>console.log('" + senha.Value + "');</script>");
             Cadastro cad = new Cadastro(nome.Value, email.Value, senha.Value);
         }
+        
     }
 } 
