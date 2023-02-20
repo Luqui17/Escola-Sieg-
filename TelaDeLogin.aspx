@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TelaCadastro.aspx.cs" Inherits="EscolaSieg.TelaCadastro" EnableEventValidation="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TelaDeLogin.aspx.cs" Inherits="EscolaSieg.TelaDeLogin" %>
 
 <!DOCTYPE html>
 <script runat="server">
@@ -37,34 +37,28 @@
             <div class="col-6 offset-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <h1>Cadastro</h1>
-                        <form runat="server" method="post">
-                            <div class="form-group" runat="server">
-                                <br />
-                                <label for="nome">Nome :</label>
-                                <input class="form-control" type="text" name="txbNome" id="nome"
-                                    placeholder="Digite o seu nome..." runat="server" required />
-                            </div>
+                        <h1>Login</h1>
+                        <form id="form-login">
                             <div class="form-group" runat="server">
                                 <br />
                                 <label for="email">Email :</label>
                             </div>
                             <div class="form-group" runat="server">
-                                <input class="form-control" type="email" name="txbEmail" id="email"
-                                    placeholder="Digite o seu email..." runat="server" required /><br />
+                                <input class="form-control" type="email" name="email" id="email"
+                                required placeholder="Digite o seu email..." runat="server"/><br />
                                 <label for="senha">Senha :</label>
-                                <input class="form-control" type="password" name="txbSsenha" id="senha"
-                                    placeholder="Digite a sua senha..." runat="server" required />
+                                <input class="form-control" type="password" name="email" id="senha"
+                                    required placeholder="Digite a sua senha..." runat="server"/>
                             </div>
-                            <div class="form-group text-center" runat="server">
+                           <div class="form-group text-center" runat="server">
                                 <br />
-                                <button onclick="CadastrarButton" type="submit" class="btn btn-outline-primary" id="botaoCadastrar" name="BotaoCadastrar" runat="server">Cadastrar</button>
+                                <button onclick="LoginButton" type="submit" class="btn btn-outline-primary" id="botaoLogin" name="BotaoLogin" runat="server">Acessar</button>
                             </div>
                             <div class="alert alert-danger d-none">
                                 Preencha o campo XXXX
                             </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>

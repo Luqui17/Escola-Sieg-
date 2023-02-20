@@ -10,6 +10,10 @@ namespace EscolaSieg
     {
 
         SqlConnection con = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        SqlDataReader dr;
+        public string mensagem="";
+        public bool tem = false;
         //Construtor
         public Conexao()
         {
@@ -33,6 +37,27 @@ namespace EscolaSieg
             {
                 con.Close();
             }
+        }
+        public bool VerificarLogin(string email, string senha)
+        {
+            //Comandos Sql verificar se tem no banco de dados
+            cmd.CommandText = "select * from usuario where email = @email and senha = @senha";
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@senha", senha);
+            try
+            {
+                cmd.Connection = conectar();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    tem = true;
+                }
+            }
+            catch (SqlException)
+            {
+                this.mensagem = "Erro com banco de dados";
+            }
+            return tem;
         }
     }
 }
