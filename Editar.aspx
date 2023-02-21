@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="EscolaSieg.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Editar.aspx.cs" Inherits="EscolaSieg.Editar" %>
 
 <!DOCTYPE html>
-
+<script runat="server">
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Teste</title>
+    <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -36,8 +37,14 @@
             <div class="col-6 offset-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <h1>Login</h1>
+                        <h1>Editar</h1>
                         <form runat="server" method="post">
+                            <div class="form-group" runat="server">
+                                <br />
+                                <label for="nome">Nome :</label>
+                                <input class="form-control" type="text" name="txbNome" id="nome"
+                                    placeholder="Digite o seu nome..." runat="server" required />
+                            </div>
                             <div class="form-group" runat="server">
                                 <br />
                                 <label for="email">Email :</label>
@@ -51,12 +58,12 @@
                             </div>
                             <div class="form-group text-center" runat="server">
                                 <br />
-                                <button onclick="CadastrarButton" type="submit" class="btn btn-outline-primary" id="botaoCadastrar" name="BotaoCadastrar" runat="server">Login</button>
+                                <button onclick="EditarButton" type="submit" class="btn btn-outline-primary" id="botaoEditar" name="BotaoEditar" runat="server">Salvar</button>
                             </div>
                             <div class="alert alert-danger d-none">
                                 Preencha o campo XXXX
                             </div>
-                         </div>
+                    </div>
                     </form>
                 </div>
             </div>

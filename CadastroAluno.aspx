@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="EscolaSieg.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CadastroAluno.aspx.cs" Inherits="EscolaSieg.CadastroAluno" %>
 
-<!DOCTYPE html>
-
+<script runat="server">
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Teste</title>
+    <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -23,9 +23,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="WebForm1.aspx">Login</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="TelaInicial.aspx">Sobre</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -36,8 +33,14 @@
             <div class="col-6 offset-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <h1>Login</h1>
+                        <h1>Cadastro</h1>
                         <form runat="server" method="post">
+                            <div class="form-group" runat="server">
+                                <br />
+                                <label for="nome">Nome :</label>
+                                <input class="form-control" type="text" name="txbNome" id="nome"
+                                    placeholder="Digite o seu nome..." runat="server" required />
+                            </div>
                             <div class="form-group" runat="server">
                                 <br />
                                 <label for="email">Email :</label>
@@ -51,12 +54,12 @@
                             </div>
                             <div class="form-group text-center" runat="server">
                                 <br />
-                                <button onclick="CadastrarButton" type="submit" class="btn btn-outline-primary" id="botaoCadastrar" name="BotaoCadastrar" runat="server">Login</button>
+                                <button onclick="CadastrarButton" type="submit" class="btn btn-outline-primary" id="botaoCadastrar" name="BotaoCadastrar" runat="server">Cadastrar</button>
                             </div>
                             <div class="alert alert-danger d-none">
                                 Preencha o campo XXXX
                             </div>
-                         </div>
+                    </div>
                     </form>
                 </div>
             </div>

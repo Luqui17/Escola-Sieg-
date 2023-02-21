@@ -81,8 +81,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alunos.cs" />
+    <Compile Include="CadastroAluno.aspx.cs">
+      <DependentUpon>CadastroAluno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroAluno.aspx.designer.cs">
+      <DependentUpon>CadastroAluno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controle.cs" />
     <Compile Include="Deletar.cs" />
+    <Compile Include="Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicial.aspx.cs">
       <DependentUpon>TelaInicial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,6 +112,8 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Content Include="CadastroAluno.aspx" />
+    <Content Include="Editar.aspx" />
     <Content Include="TelaCadastro.aspx" />
     <Compile Include="TelaCadastro.aspx.cs">
       <DependentUpon>TelaCadastro.aspx</DependentUpon>
