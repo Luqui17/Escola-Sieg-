@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controle.cs" />
+    <Compile Include="Deletar.cs" />
     <Compile Include="TelaInicial.aspx.cs">
       <DependentUpon>TelaInicial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +13,37 @@ namespace EscolaSieg
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                Page.Response.Write("<script>console.log('Lcuas');</script>");
+                Conexao con = new Conexao();
+                using (SqlConnection cn = new SqlConnection())
+                {
+                    cn.ConnectionString = @"Data Source=DESKTOP-119IQ90\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
+                    cn.Open();
+
+                    var sqlQuery = "select * from usuario";
+                    using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, cn))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            da.Fill(dt);
+                            GridView1.DataSource = dt;
+                            GridView1.DataBind();
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
         }
     }
