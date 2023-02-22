@@ -11,7 +11,11 @@ namespace EscolaSieg
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           botaoAluno.ServerClick += new EventHandler(this.AlunoButton);
+        }
+        private void AlunoButton(object sender, EventArgs e)
+        {
+            Alunos aluno = new Alunos(nome.Value, cpf.Value, data.Value, turma.Value);
         }
     }
 }

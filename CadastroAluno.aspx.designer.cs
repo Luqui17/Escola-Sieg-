@@ -24,30 +24,39 @@ namespace EscolaSieg
         protected global::System.Web.UI.HtmlControls.HtmlInputText nome;
 
         /// <summary>
-        /// Controle email.
+        /// Controle data.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl data;
 
         /// <summary>
-        /// Controle senha.
+        /// Controle cpf.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword senha;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText cpf;
 
         /// <summary>
-        /// Controle botaoCadastrar.
+        /// Controle turma.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton botaoCadastrar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText turma;
+
+        /// <summary>
+        /// Controle botaoAluno.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton botaoAluno;
     }
 }

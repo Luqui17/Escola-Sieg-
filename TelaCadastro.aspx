@@ -24,9 +24,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="WebForm1.aspx">Login</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="TelaInicial.aspx">Sobre</a>
-                </li>
             </ul>
         </div>
     </nav>

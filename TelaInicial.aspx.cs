@@ -23,7 +23,7 @@ namespace EscolaSieg
                     cn.ConnectionString = @"Data Source=DESKTOP-119IQ90\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
                     cn.Open();
 
-                    var sqlQuery = "select * from usuario";
+                    var sqlQuery = "select * from Alunos";
                     using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, cn))
                     {
                         using (DataTable dt = new DataTable())
@@ -52,7 +52,7 @@ namespace EscolaSieg
                     cn.ConnectionString = @"Data Source=DESKTOP-119IQ90\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
                     cn.Open();
 
-                    var sqlQuery = "select * from usuario where nome = '"+TextBox1.Text+ "'" ;
+                    var sqlQuery = "select * from Alunos where Turma = '"+TextBox1.Text+ "'" ;
                     using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, cn))
                     {
                         using (DataTable dt = new DataTable())
@@ -72,6 +72,11 @@ namespace EscolaSieg
         protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //var id = Convert.ToInt32(GridView1.Rows[GridView1.CurrentCell.RowIndex])
         }
     }
 }

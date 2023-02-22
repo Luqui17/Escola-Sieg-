@@ -23,9 +23,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="WebForm1.aspx">Login</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="TelaInicial.aspx">Sobre</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -65,5 +62,6 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>
