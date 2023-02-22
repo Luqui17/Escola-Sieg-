@@ -12,15 +12,32 @@ namespace EscolaSieg
 {
     public partial class TelaInicial : System.Web.UI.Page
     {
+        public Int32 IdProduto
+        {
+            get
+            {
+                if (ViewState["IdProduto"] != null)
+                    return Convert.ToInt32(ViewState["IdProduto"]);
+
+                return 0;
+            }
+            set
+            {
+                ViewState["IdProduto"] = value;
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
+            int Id;
+            //acessarAluno.ServerClick += new EventHandler(this.AcessarAluno);
+
             try
             {
                 Page.Response.Write("<script>console.log('Lcuas');</script>");
                 Conexao con = new Conexao();
                 using (SqlConnection cn = new SqlConnection())
                 {
-                    cn.ConnectionString = @"Data Source=DESKTOP-119IQ90\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
+                    cn.ConnectionString = @"Data Source=DESKTOP-HP94V7G\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
                     cn.Open();
 
                     var sqlQuery = "select * from Alunos";
@@ -39,6 +56,15 @@ namespace EscolaSieg
             {
                 throw;
             }
+
+            //if (!Page.IsPostBack)
+            //{
+            //    if (Request.QueryString["IdProduto"] != null)
+            //    {
+            //        this.GridView1(Convert.ToInt32(Request.QueryString["IdProduto"]));
+            //        this.IdProduto = Convert.ToInt32(Request.QueryString["IdProduto"]);
+            //    }
+            //}
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -49,7 +75,7 @@ namespace EscolaSieg
                 Conexao con = new Conexao();
                 using (SqlConnection cn = new SqlConnection())
                 {
-                    cn.ConnectionString = @"Data Source=DESKTOP-119IQ90\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
+                    cn.ConnectionString = @"Data Source=DESKTOP-HP94V7G\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
                     cn.Open();
 
                     var sqlQuery = "select * from Alunos where Turma = '"+TextBox1.Text+ "'" ;
@@ -78,5 +104,25 @@ namespace EscolaSieg
         {
             //var id = Convert.ToInt32(GridView1.Rows[GridView1.CurrentCell.RowIndex])
         }
+
+        protected void AcessarAluno(object sender, EventArgs e)
+        {
+            Page.Response.Redirect("CadastroAluno.apx");
+        }
+
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            Page.Response.Redirect("CadastroAluno.aspx");
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        protected void gvAlunosTV_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+
+        }
+
     }
 }

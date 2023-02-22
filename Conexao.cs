@@ -17,7 +17,7 @@ namespace EscolaSieg
         //Construtor
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-119IQ90\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-HP94V7G\SQLEXPRESS;Initial Catalog=escola;Integrated Security=True";
         
         }
         //MetodoConectar

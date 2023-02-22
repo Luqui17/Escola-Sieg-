@@ -34,18 +34,26 @@
         <div class="d-md-flex justify-content-md-center" padding = "2px" margin = "2px">
             <asp:TextBox type="bi-search" ID="TextBox1" runat="server" Width="225px" class="form-control" aria-placeholder="Pesquisar"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="Pesquisar" class="btn btn-primary" OnClick="Button1_Click"/>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <button></button>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="WebForm1.aspx">Login</a>
-                </li>
-            </ul>
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Cadastrar" />
         </div>
         <br>
-        <asp:GridView ID="GridView1" runat="server" class="table table-dark table-hover container"></asp:GridView>
+        <asp:GridView ID="GridView1" runat="server" class="table table-dark table-hover container" onrowcommand="gvAlunos_RowCommand" 
+            onrowdeleting="gvAlunos_RowDeleting" 
+            onrowupdating="gvAlunosTV_RowUpdating">
+            <Columns> 
+                <asp:CommandField ButtonType="Button" ShowEditButton="True" EditText="Editar" >
+                <ControlStyle CssClass="btn-Warning" />
+                <ItemStyle CssClass="btn-Warning" />
+                </asp:CommandField>
+
+                <asp:CommandField ShowDeleteButton="True" >
+                <ControlStyle CssClass="btn-Danger" />
+                <ItemStyle CssClass="btn-Danger"/>
+                </asp:CommandField>
+            </Columns>
+        </asp:GridView>
+        <div class="container justify-content-md-center">
+            <asp:Button ID="Button2" runat="server" Text="Cadastrar" class="btn btn-success" OnClick="Button2_Click1"/>
+        </div>
     </body>
 </form>
 </html>
